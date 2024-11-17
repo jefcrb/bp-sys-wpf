@@ -31,7 +31,7 @@ namespace bp_sys_wpf.ViewModel
         {
             if (selectedValue != "" && selectedValue != null)
             {
-                return new BitmapImage(new Uri(GetAbsoluteFilePath("pic/" + type + "/" + selectedValue + ".png")));
+                return new BitmapImage(new Uri(GetAbsoluteFilePath("pic/" + type + "/" + selectedValue.Replace(' ', '_') + ".png")));
             }
             else
             {

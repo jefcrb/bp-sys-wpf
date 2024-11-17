@@ -38,7 +38,7 @@
         </ResourceDictionary>
     </Page.Resources>
     <StackPanel>
-        <GroupBox Header="Ban监管者"
+        <GroupBox Header="Hunter ban"
                   Margin="10,0,0,0"
                   HorizontalAlignment="Left"
                   VerticalAlignment="Top">
@@ -87,22 +87,22 @@
                 </StackPanel>
             </Grid>
         </GroupBox>
-        <GroupBox Header="Ban位数量设定"
+        <GroupBox Header="Ban slots"
                   Margin="10,10,0,0"
                   HorizontalAlignment="Left">
             <StackPanel Orientation="Horizontal"
                         Margin="10,10,10,10">
                 <ui:ToggleSwitch x:Name="HunBanStateChange1"
-                                 Content="1号位"
+                                 Content="Slot 1"
                                  IsChecked="{Binding BpReceiveModel.HunBanLock[0]}"
                                  Click="HunBanStateChange_Click"/>
                 <ui:ToggleSwitch x:Name="HunBanStateChange2"
-                                 Content="2号位"
+                                 Content="Slot 2"
                                  IsChecked="{Binding BpReceiveModel.HunBanLock[1]}"
                                  Margin="20,0,0,0"
                                  Click="HunBanStateChange_Click"/>
                 <ui:ToggleSwitch x:Name="HunBanStateChange3"
-                                 Content="3号位"
+                                 Content="Slot 3"
                                  IsChecked="{Binding BpReceiveModel.HunBanLock[2]}"
                                  Margin="20,0,0,0"
                                  Click="HunBanStateChange_Click"/>

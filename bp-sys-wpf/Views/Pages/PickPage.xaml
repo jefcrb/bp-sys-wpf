@@ -35,7 +35,7 @@
             <GroupBox Margin="10,0,0,0"
                       HorizontalAlignment="Left"
                       VerticalAlignment="Top"
-                      Header="选择求生者">
+                      Header="Survivor picks">
                 <StackPanel Margin="10,10,10,10"
                             HorizontalAlignment="Left"
                             VerticalAlignment="Top"
@@ -138,7 +138,7 @@
                       Margin="10,0,0,0"
                       HorizontalAlignment="Left"
                       VerticalAlignment="Center"
-                      Header="当前上场选手">
+                      Header="Players">
                 <Grid Margin="0,0,10,10">
                     <StackPanel Margin="10,0,0,0" HorizontalAlignment="Left" Orientation="Horizontal">
                         <StackPanel Margin="0,10,0,0">
@@ -261,7 +261,7 @@
                 <GroupBox Margin="10,0,0,0"
                           HorizontalAlignment="Left"
                           VerticalAlignment="Top"
-                          Header="选择监管者">
+                          Header="Hunter pick">
                     <StackPanel Margin="10,10,10,10" HorizontalAlignment="Left" VerticalAlignment="Top">
                         <ComboBox x:Name="Hun_pick"
                                   Width="150"
@@ -275,26 +275,26 @@
                         <Image x:Name="Hun_pick_review" Source="{Binding BpShowViewModel.BpShow.HunPick.ChartcherHeadImage}" />
                     </StackPanel>
                 </GroupBox>
-                <GroupBox Margin="10,0,0,0" Header="待选框开关">
+                <GroupBox Margin="10,0,0,0" Header="Banpick progress">
                     <StackPanel Margin="10,10,10,10" VerticalAlignment="Center">
                         <ui:ToggleSwitch x:Name="Sur1And2Border"
                                          Click="Sur1And2Border_Click"
-                                         Content="求生pick1&amp;2"
+                                         Content="Surv pick 1 &amp; 2"
                                          IsChecked="False" />
                         <ui:ToggleSwitch x:Name="Sur3Border"
                                          Margin="0,10,0,0"
                                          Click="Sur3Border_Click"
-                                         Content="求生pick3"
+                                         Content="Surv pick 3"
                                          IsChecked="False" />
                         <ui:ToggleSwitch x:Name="Sur4Border"
                                          Margin="0,10,0,0"
                                          Click="Sur4Border_Click"
-                                         Content="求生pick4"
+                                         Content="Surv pick 4"
                                          IsChecked="False" />
                         <ui:ToggleSwitch x:Name="HunBorder"
                                          Margin="0,10,0,0"
                                          Click="HunBorder_Click"
-                                         Content="监管pick"
+                                         Content="Hunter pick"
                                          IsChecked="False" />
                     </StackPanel>
                 </GroupBox>
@@ -303,7 +303,7 @@
             <GroupBox Margin="10,10,0,0"
                       HorizontalAlignment="Left"
                       VerticalAlignment="Top"
-                      Header="全局禁选记录">
+                      Header="Perma bans">
                 <StackPanel>
                     <GroupBox Margin="10,10,10,10"
                               HorizontalAlignment="Left"
@@ -365,6 +365,34 @@
                                           ItemsSource="{Binding ComboBoxItemViewModel.sur}"
                                           MaxDropDownHeight="200"
                                           SelectedItem="{Binding BpReceiveModel.SurHoleBanMainRecord[5]}" />
+                            </StackPanel>
+                            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                                <ComboBox x:Name="Main_hole7"
+                                      Width="150"
+                                      Height="35"
+                                      IsEditable="True"
+                                      IsEnabled="True"
+                                      ItemsSource="{Binding ComboBoxItemViewModel.sur}"
+                                      MaxDropDownHeight="200"
+                                      SelectedItem="{Binding BpReceiveModel.SurHoleBanMainRecord[6]}" />
+                                <ComboBox x:Name="Main_hole8"
+                                      Width="150"
+                                      Height="35"
+                                      Margin="10,0,0,0"
+                                      IsEditable="True"
+                                      IsEnabled="True"
+                                      ItemsSource="{Binding ComboBoxItemViewModel.sur}"
+                                      MaxDropDownHeight="200"
+                                      SelectedItem="{Binding BpReceiveModel.SurHoleBanMainRecord[7]}" />
+                                <ComboBox x:Name="Main_hole9"
+                                      Width="150"
+                                      Height="35"
+                                      Margin="10,0,0,0"
+                                      IsEditable="True"
+                                      IsEnabled="True"
+                                      ItemsSource="{Binding ComboBoxItemViewModel.sur}"
+                                      MaxDropDownHeight="200"
+                                      SelectedItem="{Binding BpReceiveModel.SurHoleBanMainRecord[8]}" />
                             </StackPanel>
                         </StackPanel>
 
@@ -429,6 +457,34 @@
                                           ItemsSource="{Binding ComboBoxItemViewModel.sur}"
                                           MaxDropDownHeight="200"
                                           SelectedItem="{Binding BpReceiveModel.SurHoleBanAwayRecord[5]}" />
+                            </StackPanel>
+                            <StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+                                <ComboBox x:Name="Away_hole7"
+                                      Width="150"
+                                      Height="35"
+                                      IsEditable="True"
+                                      IsEnabled="True"
+                                      ItemsSource="{Binding ComboBoxItemViewModel.sur}"
+                                      MaxDropDownHeight="200"
+                                      SelectedItem="{Binding BpReceiveModel.SurHoleBanAwayRecord[6]}" />
+                                                        <ComboBox x:Name="Away_hole8"
+                                      Width="150"
+                                      Height="35"
+                                      Margin="10,0,0,0"
+                                      IsEditable="True"
+                                      IsEnabled="True"
+                                      ItemsSource="{Binding ComboBoxItemViewModel.sur}"
+                                      MaxDropDownHeight="200"
+                                      SelectedItem="{Binding BpReceiveModel.SurHoleBanAwayRecord[7]}" />
+                                <ComboBox x:Name="Away_hole9"
+                                      Width="150"
+                                      Height="35"
+                                      Margin="10,0,0,0"
+                                      IsEditable="True"
+                                      IsEnabled="True"
+                                      ItemsSource="{Binding ComboBoxItemViewModel.sur}"
+                                      MaxDropDownHeight="200"
+                                      SelectedItem="{Binding BpReceiveModel.SurHoleBanAwayRecord[8]}" />
                             </StackPanel>
                         </StackPanel>
                     </GroupBox>

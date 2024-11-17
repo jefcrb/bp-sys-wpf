@@ -52,7 +52,7 @@
                                    Height="30"
                                    Margin="30,0,30,0"
                                    Click="Swap_Click"
-                                   Content="换边"
+                                   Content="Swap"
                                    Icon="{ui:SymbolIcon ArrowSwap24}" />
                         <ui:TextBlock x:Name="TeamHun"
                                       Width="100"
@@ -67,13 +67,13 @@
                                Height="30"
                                HorizontalAlignment="Center"
                                Click="Reset_Click"
-                               Content="重置"
+                               Content="Reset"
                                Icon="{ui:SymbolIcon ArrowReset24}" />
                     <GroupBox Grid.Column="2"
                               Margin="0,0,10,0"
                               HorizontalAlignment="Right"
                               Foreground="White"
-                              Header="计时器（可自定义）">
+                              Header="Timer (customizable)">
                         <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
                             <ComboBox x:Name="Timmer"
                                       Width="75"
@@ -88,15 +88,15 @@
                                        Width="80"
                                        Margin="10,0,0,0"
                                        Click="TimmerStart_Click"
-                                       Content="开始"
+                                       Content="Start"
                                        Icon="{ui:SymbolIcon Play24}" />
                             <ui:Button x:Name="TimmerClose"
                                        Width="85"
                                        Margin="10,0,10,0"
                                        Click="TimmerClose_Click"
-                                       Content="关闭"
+                                       Content="Stop"
                                        Icon="{ui:SymbolIcon RecordStop24}" />
-                            <TextBlock Width="35" VerticalAlignment="Center" Text="预览：" />
+                            <TextBlock Width="35" VerticalAlignment="Center" Text="Preview：" />
                             <TextBlock x:Name="CountdownView"
                                        Width="30"
                                        HorizontalAlignment="Center"
@@ -120,45 +120,45 @@
                                    ScrollViewer.HorizontalScrollBarVisibility="Auto"
                                    ScrollViewer.VerticalScrollBarVisibility="Auto">
                     <ui:NavigationView.MenuItems>
-                        <ui:NavigationViewItem Content="启动页" Icon="{ui:SymbolIcon Home24}" TargetPageType="{x:Type pages:HomePage}" />
-                        <ui:NavigationViewItem Content="队伍信息"
+                        <ui:NavigationViewItem Content="Setup" Icon="{ui:SymbolIcon Home24}" TargetPageType="{x:Type pages:HomePage}" />
+                        <ui:NavigationViewItem Content="Team info"
                                                Icon="{ui:SymbolIcon PeopleTeam24}"
                                                NavigationCacheMode="Enabled"
                                                TargetPageType="{x:Type pages:TeamInfoPage}" />
-                        <ui:NavigationViewItem Content="地图BP"
+                        <ui:NavigationViewItem Content="Map bp"
                                                Icon="{ui:SymbolIcon Map24}"
                                                NavigationCacheMode="Enabled"
                                                TargetPageType="{x:Type pages:MapBpPage}" />
-                        <ui:NavigationViewItem Content="Ban监管"
+                        <ui:NavigationViewItem Content="Hunt bp"
                                                Icon="{ui:SymbolIcon PresenterOff24}"
                                                NavigationCacheMode="Enabled"
                                                TargetPageType="{x:Type pages:HunBanPage}" />
-                        <ui:NavigationViewItem Content="Ban求生"
+                        <ui:NavigationViewItem Content="Surv bp"
                                                Icon="{ui:SymbolIcon PersonProhibited24}"
                                                NavigationCacheMode="Enabled"
                                                TargetPageType="{x:Type pages:SurBanPage}" />
-                        <ui:NavigationViewItem Content="角色选择"
+                        <ui:NavigationViewItem Content="Char picks"
                                                Icon="{ui:SymbolIcon PersonAdd24}"
                                                NavigationCacheMode="Enabled"
                                                TargetPageType="{x:Type pages:PickPage}" />
-                        <ui:NavigationViewItem Content="天赋特质"
+                        <ui:NavigationViewItem Content="Traits"
                                                Icon="{ui:SymbolIcon PersonWalking24}"
                                                NavigationCacheMode="Enabled"
                                                TargetPageType="{x:Type pages:TalentPage}" />
-                        <ui:NavigationViewItem Content="比分控制"
+                        <ui:NavigationViewItem Content="Score"
                                                Icon="{ui:SymbolIcon NumberRow24}"
                                                NavigationCacheMode="Enabled"
                                                TargetPageType="{x:Type pages:ScoreControlPage}" />
-                        <ui:NavigationViewItem Content="赛后数据"
+                        <ui:NavigationViewItem Content="Stats"
                                                Icon="{ui:SymbolIcon TextBulletListSquare24}"
                                                NavigationCacheMode="Enabled"
                                                TargetPageType="{x:Type pages:GameDataPage}"
                                                Visibility="Collapsed" />
                         <ui:NavigationViewItem x:Name="StartFronts"
                                                Click="StartFronts_Click"
-                                               Content="启动前台"
+                                               Content="Start"
                                                Icon="{ui:SymbolIcon ShareScreenStart24}" />
-                        <ui:NavigationViewItem Content="关于"
+                        <ui:NavigationViewItem Content="Help"
                                                Icon="{ui:SymbolIcon Info24}"
                                                NavigationCacheMode="Enabled"
                                                TargetPageType="{x:Type pages:InfoPage}" />

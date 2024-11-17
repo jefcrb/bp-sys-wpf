@@ -46,14 +46,14 @@ namespace bp_sys_wpf.ViewModel
                 if (_BoList3 == null)
                 {
                     _BoList3 = new List<string>();
-                    _BoList3.Add("BO1上半");
-                    _BoList3.Add("BO1下半");
-                    _BoList3.Add("BO2上半");
-                    _BoList3.Add("BO2下半");
-                    _BoList3.Add("BO3上半");
-                    _BoList3.Add("BO3下半");
-                    _BoList3.Add("加赛上半");
-                    _BoList3.Add("加赛下半");
+                    _BoList3.Add("BO1 1st half");
+                    _BoList3.Add("BO1 2nd half");
+                    _BoList3.Add("BO2 1st half");
+                    _BoList3.Add("BO2 2nd half");
+                    _BoList3.Add("BO3 1st half");
+                    _BoList3.Add("BO3 2nd half");
+                    _BoList3.Add("Overtime 1st half");
+                    _BoList3.Add("Overtime 2nd half");
                 }
                 return _BoList3; }
             set { _BoList3 = value; }
@@ -68,16 +68,16 @@ namespace bp_sys_wpf.ViewModel
                 if (_BoList5 == null)
                 {
                     _BoList5 = new List<string>();
-                    _BoList5.Add("BO1上半");
-                    _BoList5.Add("BO1下半");
-                    _BoList5.Add("BO2上半");
-                    _BoList5.Add("BO2下半");
-                    _BoList5.Add("BO3上半");
-                    _BoList5.Add("BO3下半");
-                    _BoList5.Add("BO4上半");
-                    _BoList5.Add("BO4下半");
-                    _BoList5.Add("BO5上半");
-                    _BoList5.Add("BO5下半");
+                    _BoList5.Add("BO1 1st half");
+                    _BoList5.Add("BO1 2nd half");
+                    _BoList5.Add("BO2 1st half");
+                    _BoList5.Add("BO2 2nd half");
+                    _BoList5.Add("BO3 1st half");
+                    _BoList5.Add("BO3 2nd half");
+                    _BoList5.Add("BO4 1st half");
+                    _BoList5.Add("BO4 2nd half");
+                    _BoList5.Add("BO5 1st half");
+                    _BoList5.Add("BO5 2nd half");
                 }
                 return _BoList5;
             }
@@ -93,14 +93,14 @@ namespace bp_sys_wpf.ViewModel
                 if (_MapPick == null)
                 {
                     _MapPick = new List<string>();
-                    _MapPick.Add("红教堂");
-                    _MapPick.Add("湖景村");
-                    _MapPick.Add("军工厂");
-                    _MapPick.Add("里奥的回忆");
-                    _MapPick.Add("圣心医院");
-                    _MapPick.Add("唐人街");
-                    _MapPick.Add("永眠镇");
-                    _MapPick.Add("月亮河公园");
+                    _MapPick.Add("The Red Church");
+                    _MapPick.Add("Lakeside Village");
+                    _MapPick.Add("Arms Factory");
+                    _MapPick.Add("Leos Memory");
+                    _MapPick.Add("Sacred Heart Hospital");
+                    _MapPick.Add("China Town");
+                    _MapPick.Add("Eversleeping Town");
+                    _MapPick.Add("Moonlit River Park");
                 }
                 return _MapPick;
             }
@@ -116,15 +116,15 @@ namespace bp_sys_wpf.ViewModel
                 if (_MapBan == null)
                 {
                     _MapBan = new List<string>();
-                    _MapBan.Add("无Ban");
-                    _MapBan.Add("红教堂");
-                    _MapBan.Add("湖景村");
-                    _MapBan.Add("军工厂");
-                    _MapBan.Add("里奥的回忆");
-                    _MapBan.Add("圣心医院");
-                    _MapBan.Add("唐人街");
-                    _MapBan.Add("永眠镇");
-                    _MapBan.Add("月亮河公园");
+                    _MapBan.Add("No Ban");
+                    _MapBan.Add("The Red Church");
+                    _MapBan.Add("Lakeside Village");
+                    _MapBan.Add("Arms Factory");
+                    _MapBan.Add("Leos Memory");
+                    _MapBan.Add("Sacred Heart Hospital");
+                    _MapBan.Add("China Town");
+                    _MapBan.Add("Eversleeping Town");
+                    _MapBan.Add("Moonlit River Park");
                 }
                 return _MapBan;
             }
@@ -140,14 +140,14 @@ namespace bp_sys_wpf.ViewModel
                 if (_Trait == null)
                 {
                     _Trait = new List<string>();
-                    _Trait.Add("聆听");
-                    _Trait.Add("失常");
-                    _Trait.Add("兴奋");
-                    _Trait.Add("巡视者");
-                    _Trait.Add("传送");
-                    _Trait.Add("窥视者");
-                    _Trait.Add("闪现");
-                    _Trait.Add("移形");
+                    _Trait.Add("Listen");
+                    _Trait.Add("Abnormal");
+                    _Trait.Add("Excitement");
+                    _Trait.Add("Patroller");
+                    _Trait.Add("Teleport");
+                    _Trait.Add("Peepers");
+                    _Trait.Add("Blink");
+                    _Trait.Add("Warp");
                 }
                 return _Trait;
             }

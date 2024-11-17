@@ -261,12 +261,12 @@ namespace bp_sys_wpf.Views.Pages
         private void FormatChange_Click(object sender, RoutedEventArgs e)
         {
             string runDir = Environment.CurrentDirectory;
-            if (Format.Text == "赛制：BO5")
+            if (Format.Text == "Format: BO5")
             {
                 try
                 {
                     ScoreHole.scoreHole.Background = new ImageBrush(new BitmapImage(new Uri($"{runDir}\\Resource\\gui\\score_hole_bo3.png")));
-                    Format.Text = "赛制：BO3";
+                    Format.Text = "Format: BO3";
                     Bo.ItemsSource = RootViewModel.ComboBoxItemViewModel.BoList3;
                 }
                 catch
@@ -282,7 +282,7 @@ namespace bp_sys_wpf.Views.Pages
                 try
                 {
                     ScoreHole.scoreHole.Background = new ImageBrush(new BitmapImage(new Uri($"{runDir}\\Resource\\gui\\score_hole.png")));
-                    Format.Text = "赛制：BO5";
+                    Format.Text = "Format: BO5";
                     Bo.ItemsSource = RootViewModel.ComboBoxItemViewModel.BoList5;
                 }
                 catch

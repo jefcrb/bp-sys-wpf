@@ -26,14 +26,14 @@
     <Grid>
         <GroupBox HorizontalAlignment="Left" VerticalAlignment="Top" Header="地图BP">
             <StackPanel Margin="10,10,0,0">
-                <ui:TextBlock FontSize="25" Text="选择" />
+                <ui:TextBlock FontSize="25" Text="Map choice" />
                 <ComboBox x:Name="Map_pick"
                           Width="200"
                           Height="50"
                           HorizontalAlignment="Left"
                           ItemsSource="{Binding ComboBoxItemViewModel.MapPick}"
                           SelectedItem="{Binding BpReceiveModel.MapPick}" />
-                <ui:TextBlock Grid.Row="2" FontSize="25" Text="禁用" />
+                <ui:TextBlock Grid.Row="2" FontSize="25" Text="Map ban" />
                 <ComboBox x:Name="Map_ban"
                           Grid.Row="3"
                           Width="200"
